@@ -1,0 +1,14 @@
+- name: Deep Security Agentes Linux
+  include_vars:
+    file: linux.yml
+
+- name: Copy script file
+  copy:
+    src: "{{ linux_script }}"
+    dest: /root
+    owner: root
+    group: root
+    mode: u=rwx,g=rwx,o=rwx
+
+- name: Run remote install	
+  shell: "{{ linux_install }}"

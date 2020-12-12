@@ -1,0 +1,5 @@
+---
+windows_script: /root/projetos/DeepSecurity/role/templates/agentwindows.ps1
+default: C:\
+windows_install: powershell.exe -ExecutionPolicy ByPass -File C:/agentwindows.ps1
+

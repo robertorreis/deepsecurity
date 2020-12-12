@@ -1,0 +1,3 @@
+---
+linux_script: /root/projetos/DeepSecurity/role/templates/agentlinux.ps1
+linux_install: /root/agentlinux.ps1

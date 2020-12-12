@@ -1,0 +1,22 @@
+[windows]
+
+reiswin2008.cloud
+
+[linux]
+
+rreiscentos.cloud
+rreisredhat.cloud
+rreisdebian.cloud
+
+[windows:vars]
+ansible_connection = "winrm"
+ansible_port = 5986
+ansible_winrm_transport = ntlm
+ansible_user = "Administrator@rreis.cloud"
+ansible_password = "password"
+ansible_winrm_server_cert_validation = ignore
+
+[linux:vars]
+ansible_connection = "ssh"
+ansible_user = "root"
+ansible_ssh_pass = 
