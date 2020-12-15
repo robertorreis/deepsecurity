@@ -1,2 +1,2 @@
-# deepsecurity_agentinstall
+# deepsecurity
 Playbook Ansible for Deep Security agent install.
