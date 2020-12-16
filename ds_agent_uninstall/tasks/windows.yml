@@ -1,0 +1,11 @@
+- name: Deep Security agent windows uninstall
+  include_vars: windows.yml
+
+- name: Copy Agent Local Machine
+  ansible.windows.win_copy:
+    src: "{{ windows_agentfile_path }}"
+    dest: "{{ default }}"
+    remote_src: no
+
+- name: Run Remote uninstall
+  ansible.windows.win_shell: "{{ uninstall_command }}"

@@ -1,0 +1,3 @@
+---
+linux_command_rh_cent: sudo rpm -ev ds_agent
+linux_command_debian_ubu: sudo dpkg -r ds_agent

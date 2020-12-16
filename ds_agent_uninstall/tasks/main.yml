@@ -1,0 +1,9 @@
+---
+- name: Deep Security Agent Windows
+  import_tasks: windows.yml
+  when: "'windows' in group_names"
+
+- name: Deep Security Agent Linux
+  import_tasks: linux.yml
+  when: "'linux' in group_names"
+

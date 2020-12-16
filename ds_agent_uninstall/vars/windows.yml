@@ -1,0 +1,4 @@
+---
+windows_agentfile_path: /root/projetos/DeepSecurity/role/files/Agent-Core-Windows-11.0.0-1388.x86_64.msi
+default: C:\
+uninstall_command: msiexec.exe /x C:\Agent-Core-Windows-11.0.0-1388.x86_64.msi /quiet

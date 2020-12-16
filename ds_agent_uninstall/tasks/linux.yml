@@ -1,0 +1,10 @@
+- name: Deep Security Agent Linux uninstall
+  include_vars: linux.yml
+
+- name: Run remote uninstall command
+  shell: "{{ linux_command_rh_cent }}"
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
+
+- name: executar a instalação remota
+  shell: "{{ linux_command_debian_ubu }}"
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
