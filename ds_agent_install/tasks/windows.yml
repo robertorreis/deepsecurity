@@ -3,10 +3,10 @@
     file: windows.yml
 
 - name: Copy script file
-  win_copy:
+  ansible.windows.win_copy:
     src: "{{ windows_script }}"
     dest: "{{ default }}"
     remote_src: no
 
 - name: Run remote install
-  win_command: "{{ windows_install }}"
+  ansible.windows.win_command: "{{ windows_install }}"
